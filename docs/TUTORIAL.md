@@ -67,7 +67,7 @@ git clone https://github.com/dev1508/django-asgi-websocket-service.git
 
 ---
 
-## Prometheus Set Up
+## Prometheus SetUp
  
    1. Open a new terminal.
    2. Head over to `django-asgi-websocket-service/prometheus`
@@ -79,11 +79,11 @@ git clone https://github.com/dev1508/django-asgi-websocket-service.git
 
 ---
 
-## Grafana Set Up
+## Grafana SetUp
 
    1. Head over to `localhost:3000`.
    2. Username and password are both equal to _**admin**_.
-   3. Click on "Data Your First Data Source" and select **Prometheus**.
+   3. Click on "Add Your First Data Source" and select **Prometheus**.
    4. Go to + → Import and upload JSON placed at `./grafana/dashboards/ws_dashboard.json`.
    5. Graphs will be visible (though empty).
    6. The name of the variables for each graph is mentioned below:
@@ -133,7 +133,7 @@ In another terminal, run the command: `./monitor.sh`
 
 ---
 
-## Blue - Green Deployment
+## Blue-Green Deployment
 
 ### Set Up
 1. Start the service using:
@@ -159,7 +159,7 @@ In another terminal, run the command: `./monitor.sh`
 
 1. Disconnect all the connections for 120 seconds.
 2. Then navigate to the Alerts section in Prometheus UI.
-3. It will be in _FIRING_ mode, showing that it is triggered.
+3. Prometheus will show the alert in FIRING state under the Alerts tab, indicating it was triggered due to no active connections.
 
 ---
 
@@ -180,10 +180,10 @@ In another terminal, run the command: `./monitor.sh`
 ## Bonus Feature
 
 ### Reconnection Support
-1. When starting the service and establishing a websocket connection, nonte the `Session ID` getting printed in the logs.
+1. When starting the service and establishing a websocket connection, note the `Session ID` getting printed in the logs.
 2. To reopen a closed ws connection, we can pass this `Session ID` as a query param, like:
    ```bash
-   npx wscat -c ws://localhost:8000/ws/chat/?session_id=<some-uuid>
+   npx wscat -c ws://localhost:8000/ws/chat/?session_id=<your-session-id>
    ```
 
 ---
@@ -195,5 +195,5 @@ In another terminal, run the command: `./monitor.sh`
 
 ---
 
-Thanks. 
-Let's connect here: [LinkedIn](https://www.linkedin.com/in/dev-vrat-pathak-aa6570176/)
+Made by Dev Vrat Pathak  
+Connect on [LinkedIn](https://www.linkedin.com/in/dev-vrat-pathak-aa6570176/)

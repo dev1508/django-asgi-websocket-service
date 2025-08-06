@@ -2,9 +2,10 @@
 
 set -e
 
-BLUE_RUNNING=$(docker ps --filter "name=app_blue" --format "{{.Names}}")
+# Extract current active app from nginx/default.conf
+ACTIVE_APP=$(grep 'server app_.*:8000;' ./nginx/default.conf | grep -v '^ *#' | awk '{print $2}' | cut -d':' -f1)
 
-if [ -n "$BLUE_RUNNING" ]; then
+if [ "$ACTIVE_APP" == "app_blue" ]; then
     echo "🟢 app_blue is live. Deploying 🟢app_green..."
     TARGET="app_green"
     OLD="app_blue"
@@ -29,7 +30,6 @@ echo "✅ Smoke test passed. Switching traffic..."
 
 echo "🔧 Updating Nginx config to point to $TARGET..."
 
-# Update nginx/default.conf dynamically
 # Update nginx/default.conf dynamically
 if [ "$TARGET" == "app_blue" ]; then
     sed -i '' 's/^    server app_green:8000;/    # server app_green:8000;/' ./nginx/default.conf

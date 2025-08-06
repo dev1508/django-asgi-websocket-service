@@ -45,7 +45,7 @@ python ws_load_test.py
 
 This simulates 5000 concurrent sockets sending and receiving messages via `/ws/chat/`.
 
-A sample set of logs of the load test can be found at - testing_logs/load_test_logs.txt. 
+A sample set of logs of the load test can be found at - [testing_logs/load_test_logs.txt](https://github.com/dev1508/django-asgi-websocket-service/blob/main/testing_logs/load_test_logs.txt). 
 
 
 ---

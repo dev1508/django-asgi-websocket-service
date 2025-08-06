@@ -19,6 +19,12 @@ To run and test the project, you may take help of the following tools:
 
 ---
 
+## For Tutorial
+
+Please refer [TUTORIAL.md](https://github.com/dev1508/django-asgi-websocket-service/blob/main/docs/TUTORIAL.md)
+
+---
+
 ## 🚀 One-liner to Spin Up Full Stack
 
 ```bash
@@ -81,6 +87,7 @@ service/
 ├── promote.sh         # Blue-green switch script
 ├── monitor.sh         # Monitors prometheus metrics
 ├── testing_files      # Test scripts
+├── docs/              # Docs for reference
 ├── docker-compose.yml
 ├── Dockerfile
 └── requirements.txt
@@ -97,7 +104,6 @@ service/
 - **Observability**: `/metrics`, `/healthz`, `/readyz`, logs, alerts
 - **Performance**: Supports 5K+ concurrent sockets with <3s startup, <10s shutdown
 
----
 
 ---
 

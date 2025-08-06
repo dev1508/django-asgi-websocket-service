@@ -1,0 +1,10 @@
+groups:
+  - name: WebSocketAlerts
+    rules:
+      - alert: NoActiveConnections
+        expr: ws_active_connections == 0
+        for: 60s
+        labels:
+          severity: critical
+        annotations:
+          description: "No active WebSocket connections for over 60 seconds"

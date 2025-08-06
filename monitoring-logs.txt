@@ -1,0 +1,31 @@
+[Monitor] Starting log/error and metrics monitoring
+[Monitor] Watching logs.txt for 'ERROR' lines...
+[Monitor] Polling http://localhost:8000/metrics every 10 seconds...
+
+[Monitor] Fetching metrics at Wed Aug  6 06:50:30 IST 2025:
+ws_total_messages_total 6.0
+ws_shutdown_duration_seconds_created 1.7544428068923461e+09
+ws_error_count_created 1.754442806892341e+09
+ws_total_messages_created 1.7544428068923252e+09
+ws_active_connections 1.0
+
+[Monitor] Fetching metrics at Wed Aug  6 06:50:40 IST 2025:
+ws_total_messages_total 6.0
+ws_shutdown_duration_seconds_created 1.7544428068923461e+09
+ws_error_count_created 1.754442806892341e+09
+ws_total_messages_created 1.7544428068923252e+09
+ws_active_connections 1.0
+
+[Monitor] Fetching metrics at Wed Aug  6 06:50:50 IST 2025:
+ws_total_messages_total 6.0
+ws_shutdown_duration_seconds_created 1.7544428068923461e+09
+ws_error_count_created 1.754442806892341e+09
+ws_total_messages_created 1.7544428068923252e+09
+ws_active_connections 1.0
+
+[Monitor] Fetching metrics at Wed Aug  6 06:51:00 IST 2025:
+ws_total_messages_total 6.0
+ws_shutdown_duration_seconds_created 1.7544428068923461e+09
+ws_error_count_created 1.754442806892341e+09
+ws_total_messages_created 1.7544428068923252e+09
+ws_active_connections 1.0

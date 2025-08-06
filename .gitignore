@@ -1,0 +1,26 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+.env
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Docker
+*.pid
+*.db
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Pytest cache
+.pytest_cache/

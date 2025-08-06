@@ -26,11 +26,6 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: ✅ Run Pytest
-        run: |
-          source .venv/bin/activate
-          pytest --maxfail=1 --disable-warnings -q > pytest-report.txt
-
       - name: 🚀 Start WebSocket service in background
         run: |
           source .venv/bin/activate

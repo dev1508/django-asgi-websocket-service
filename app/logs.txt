@@ -1,101 +1,38 @@
-INFO:     Started server process [15107]
+INFO:     Started server process [17107]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:53760 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53763 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53765 - "GET /metrics HTTP/1.1" 200 OK
-{"timestamp": "2025-08-06 01:13:55,197", "level": "INFO", "message": "Session Id: 02c3a72e-7bfc-4c0a-a74a-506b60742322", "request_id": "23d23675-1a09-4856-b71a-e8a176b23b86"}
-{"timestamp": "2025-08-06 01:13:55,198", "level": "INFO", "message": "WebSocket connected", "request_id": "23d23675-1a09-4856-b71a-e8a176b23b86"}
-{"timestamp": "2025-08-06 01:13:55,198", "level": "INFO", "message": "Total active connections: 1", "request_id": "23d23675-1a09-4856-b71a-e8a176b23b86"}
-INFO:     ('127.0.0.1', 53771) - "WebSocket /ws/chat/?session_id=02c3a72e-7bfc-4c0a-a74a-506b60742322" [accepted]
+{"timestamp": "2025-08-06 02:35:45,378", "level": "INFO", "message": "Session Id: a17b530e-8241-469b-bef7-770225cce82c", "request_id": "1ebe9052-aaf2-4ab5-bd6d-04735a755f1b"}
+{"timestamp": "2025-08-06 02:35:45,378", "level": "INFO", "message": "WebSocket connected", "request_id": "1ebe9052-aaf2-4ab5-bd6d-04735a755f1b"}
+{"timestamp": "2025-08-06 02:35:45,378", "level": "INFO", "message": "Total active connections: 1", "request_id": "1ebe9052-aaf2-4ab5-bd6d-04735a755f1b"}
+INFO:     ('127.0.0.1', 59945) - "WebSocket /ws/chat/" [accepted]
 INFO:     connection open
-{"timestamp": "2025-08-06 01:13:57,271", "level": "INFO", "message": "Received message 1: ko", "request_id": "98a5d951-93b4-47d3-a9b2-8755497cb699"}
-{"timestamp": "2025-08-06 01:13:58,460", "level": "INFO", "message": "Received message 2: ko", "request_id": "5732ddbb-af32-4d8d-ae23-9d04ce08d759"}
-{"timestamp": "2025-08-06 01:13:59,620", "level": "INFO", "message": "Received message 3: lp", "request_id": "66139163-c506-494a-9d51-a9a65abf4f84"}
-{"timestamp": "2025-08-06 01:14:01,480", "level": "INFO", "message": "Client requested shutdown", "request_id": "485985c4-aaf2-4bca-b0bb-e0efe8b02e45"}
-INFO:     connection closed
-{"timestamp": "2025-08-06 01:14:01,485", "level": "INFO", "message": "WebSocket disconnected", "request_id": "5595e250-e789-42ab-aad4-d0673e411e5e"}
-{"timestamp": "2025-08-06 01:14:01,485", "level": "INFO", "message": "Remaining connections: 0", "request_id": "5595e250-e789-42ab-aad4-d0673e411e5e"}
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:13:57.020003
-INFO:     127.0.0.1:53774 - "GET /metrics HTTP/1.1" 200 OK
-{"timestamp": "2025-08-06 01:14:03,186", "level": "INFO", "message": "Session Id: 02c3a72e-7bfc-4c0a-a74a-506b60742322", "request_id": "30bd1594-93b9-47ff-92aa-6773c8321718"}
-{"timestamp": "2025-08-06 01:14:03,187", "level": "INFO", "message": "WebSocket connected", "request_id": "30bd1594-93b9-47ff-92aa-6773c8321718"}
-{"timestamp": "2025-08-06 01:14:03,187", "level": "INFO", "message": "Total active connections: 1", "request_id": "30bd1594-93b9-47ff-92aa-6773c8321718"}
-INFO:     ('127.0.0.1', 53777) - "WebSocket /ws/chat/?session_id=02c3a72e-7bfc-4c0a-a74a-506b60742322" [accepted]
-INFO:     connection open
-{"timestamp": "2025-08-06 01:14:04,049", "level": "INFO", "message": "Received message 4: lp", "request_id": "a5038c6e-9c7a-439c-9a1b-5d315ea133ce"}
-{"timestamp": "2025-08-06 01:14:05,261", "level": "INFO", "message": "Received message 5: erju", "request_id": "f7d376c8-46d4-410c-a573-783b14d79c38"}
-INFO:     127.0.0.1:53779 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53781 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53783 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:14:27.022149
-INFO:     127.0.0.1:53788 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53794 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:14:57.024588
-INFO:     127.0.0.1:53801 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53816 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:15:27.026940
-INFO:     127.0.0.1:53820 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53823 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:15:57.028836
-INFO:     127.0.0.1:53838 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53843 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:16:27.031018
-INFO:     127.0.0.1:53845 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53848 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:16:57.032222
-INFO:     127.0.0.1:53856 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:17:27.047435
-INFO:     127.0.0.1:54573 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54577 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54581 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:17:57.078233
-INFO:     127.0.0.1:54594 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54601 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:18:27.080260
-INFO:     127.0.0.1:54603 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54608 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:18:57.082172
-INFO:     127.0.0.1:54612 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54615 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:19:27.085413
-INFO:     127.0.0.1:54619 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54626 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:19:57.086210
-INFO:     127.0.0.1:54632 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54636 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54638 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54641 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:20:27.087478
-INFO:     127.0.0.1:54646 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54648 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54652 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54654 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54658 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:20:57.087735
-INFO:     127.0.0.1:54662 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54664 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54669 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:21:27.089823
-INFO:     127.0.0.1:54672 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54675 - "GET /metrics HTTP/1.1" 200 OK
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:21:57.091789
-INFO:     127.0.0.1:54678 - "GET /metrics HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54683 - "GET /metrics HTTP/1.1" 200 OK
+{"timestamp": "2025-08-06 02:35:46,933", "level": "INFO", "message": "Received message 1: ko", "request_id": "c5a97a61-2400-418a-977e-a5aeae52d8bc"}
+{"timestamp": "2025-08-06 02:35:47,808", "level": "INFO", "message": "Received message 2: erf", "request_id": "76e3447f-3930-4c11-b88b-677f2cb39e40"}
+{"timestamp": "2025-08-06 02:35:48,543", "level": "INFO", "message": "Received message 3: erf", "request_id": "47571846-bfae-4b68-a304-f58be7fd4f09"}
+{"timestamp": "2025-08-06 02:36:14,428", "level": "INFO", "message": "Healthz check called", "request_id": "b308d66c-e49b-4c64-bb5a-731294d8c88d"}
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:35:50.804098
+INFO:     127.0.0.1:60015 - "GET /healthz HTTP/1.1" 200 OK
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:36:20.805696
+INFO:     127.0.0.1:60033 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60046 - "GET /metrics HTTP/1.1" 200 OK
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:36:50.807517
+INFO:     127.0.0.1:60051 - "GET /metrics HTTP/1.1" 200 OK
 INFO:     Shutting down
 INFO:     connection closed
-{"timestamp": "2025-08-06 01:22:30,556", "level": "INFO", "message": "WebSocket disconnected", "request_id": "2dccd503-236c-4aaa-b339-d21081fed31b"}
-{"timestamp": "2025-08-06 01:22:30,556", "level": "INFO", "message": "Remaining connections: 0", "request_id": "2dccd503-236c-4aaa-b339-d21081fed31b"}
+{"timestamp": "2025-08-06 02:38:35,104", "level": "INFO", "message": "WebSocket disconnected", "request_id": "0bd6231b-a9ed-4a29-9f3d-554d2c7c2e69"}
+{"timestamp": "2025-08-06 02:38:35,105", "level": "INFO", "message": "Remaining connections: 0", "request_id": "0bd6231b-a9ed-4a29-9f3d-554d2c7c2e69"}
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [15107]
+INFO:     Finished server process [17107]
 
 Aborted!
-[Heartbeat] Broadcasting to 1 clients at 2025-08-06T01:22:27.093535
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:37:20.808700
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:37:50.811827
+[Heartbeat] Broadcasting to 1 clients at 2025-08-06T02:38:20.813293
 [Shutdown] Initiated. Closing all WebSocket connections...
 [Shutdown] Heartbeat task cancelled.
-shutdown_deadline - <Task pending name='Task-249' coro=<sleep() running at /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py:636>>
+shutdown_deadline - <Task pending name='Task-34' coro=<sleep() running at /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py:636>>
 [Shutdown] Attempting to close 0 active connections...
 close_tasks - []
 [Shutdown] Gracefully closed 0 connections (or they were already closed).

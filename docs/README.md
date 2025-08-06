@@ -99,9 +99,111 @@ service/
 
 ---
 
-For more details, refer to `DESIGN.md` and `OBSERVABILITY.md`.
+---
+
+## 💻 Terminal Commands
+
+### ▶️ Start the Service
+
+- **Locally**:
+```bash
+uvicorn core.asgi:application --host 127.0.0.1 --port 8000
+```
+
+- **Docker**:
+```bash
+docker-compose down -v && docker-compose build && docker-compose up
+```
+(Default port: `8080`)
 
 ---
 
-Happy Hacking ⚡
+### 🔌 Set Up WebSocket Connection
+
+- **New Session**:
+```bash
+npx wscat -c ws://localhost:8000/ws/chat/
+```
+
+- **Existing Session**:
+```bash
+npx wscat -c ws://localhost:8000/ws/chat/?session_id=02c3a72e-7bfc-4c0a-a74a-506b60742322
+```
+
+---
+
+### 📊 Metrics, Health, and Readiness
+
+- **Error count**:
+```bash
+curl http://localhost:8000/metrics | grep error_count
+```
+- **Total messages**:
+```bash
+curl http://localhost:8000/metrics | grep total_messages
+```
+- **Active connections**:
+```bash
+curl http://localhost:8000/metrics | grep active_connection
+```
+
+- **Health**:
+```bash
+curl http://localhost:8000/healthz
+```
+- **Readiness**:
+```bash
+curl http://localhost:8000/readyz
+```
+
+---
+
+### 📈 Monitoring
+
+- Start the service
+- Run:
+```bash
+chmod +x monitor.sh
+./monitor.sh
+```
+- To persist logs:
+```bash
+./monitor.sh > monitoring-logs.txt 2>&1
+```
+
+---
+
+### 🔁 Switch Traffic Between Blue and Green
+
+```bash
+chmod +x promote.sh
+./promote.sh
+```
+
+---
+
+### 🔥 Load Testing
+
+- Start the service
+- Run:
+```bash
+python ./test_files/ws_load_test.py
+```
+
+> Sample log attached in repo
+
+---
+
+### 📡 Prometheus
+
+Run:
+```bash
+prometheus --config.file=prometheus.yml
+```
+
+---
+
+
+For more details, please refer to `DESIGN.md` and `OBSERVABILITY.md`.
+
 

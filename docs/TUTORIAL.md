@@ -159,7 +159,7 @@ In another terminal, run the command: `./monitor.sh`
 
 1. Disconnect all the connections for 120 seconds.
 2. Then navigate to the Alerts section in Prometheus UI.
-3Prometheus will show the alert in FIRING state under the Alerts tab, indicating it was triggered due to no active connections.
+3. Prometheus will show the alert in FIRING state under the Alerts tab, indicating it was triggered due to no active connections.
 
 ---
 
